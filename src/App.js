@@ -5,9 +5,7 @@ import { Form } from "./From";
 function App() {
   const [tab, setTab] = useState('List');
 
-  const changeDescription = () => {
-    setDescription('クリック後の表示です。');
-  }
+
 
   return (
     <div>
