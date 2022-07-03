@@ -14,8 +14,8 @@ class App extends React.Component {
       <div>
         <header>
           <ul>
-            <il onClick={() => this.setState({ tab: 'list' })}>リスト</il>
-            <il onClick={() => this.setState({ tab: 'form' })}>フォーム</il>
+            <li onClick={() => this.setState({ tab: 'list' })}>リスト</li>
+            <li onClick={() => this.setState({ tab: 'form' })}>フォーム</li>
           </ul>
         </header>
         <hr />
