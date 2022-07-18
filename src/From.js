@@ -16,7 +16,7 @@ const Label = styled.label`
 const Input = styled.input`
     border-radius: 3px;
     padding: 4px 8px;
-    border: 1px solid black;
+    border: 1px soild black;
 `
 
 const ButtonContainer = styled.div`
