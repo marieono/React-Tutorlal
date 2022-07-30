@@ -11,7 +11,7 @@ export const withLoading = (WrappedComponent, fetchData) => {
             super(props);
             this.state = { data: null }
         }
-        compnentDidMount() {
+        componentDidMount() {
             this.fetch();
         }
         async fetch() {
