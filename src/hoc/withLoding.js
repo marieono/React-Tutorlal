@@ -16,7 +16,7 @@ export const withLoading = (WrappedComponent, fetchData) => {
         }
         async fetch() {
             const data = await fetchData();
-            this.setState({ data })
+            this.setState({ data });
         }
         render() {
             const { data } = this.state;
