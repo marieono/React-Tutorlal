@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { useState, useEffect } from "react";
 import { List } from "./List";
 import { Form } from "./From";
-import { getLANGUAGES } from "./const/languages";
+import { getLanguages } from "./const/languages";
 import { withLoading } from './hoc/withLoding';
 
 const Header = styled.header`
@@ -50,4 +50,4 @@ function App({ data }) {
   );
 }
 
-export default withLoading(App, getLANGUAGES);
+export default withLoading(App, getLanguages);

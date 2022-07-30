@@ -7,7 +7,7 @@ const LANGUAGES = [
     'Go'
 ];
 
-export const getLANGUAGES = () => {
+export const getLanguages = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(LANGUAGES);
