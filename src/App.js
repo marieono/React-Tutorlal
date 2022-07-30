@@ -4,7 +4,7 @@ import { Form } from './From';
 import { withLoading } from './hoc/withLoding';
 import styled from 'styled-components';
 import { getLanguages } from './const/languages';
-
+import { Modal } from './components/modal';
 
 const Header = styled.header`
   display: flex;
@@ -52,6 +52,7 @@ class App extends React.Component {
         {
           tab === 'list' ? <List langs={langs} /> : <Form onAddLang={(lang) => this.addLang(lang)} />
         }
+        <Modal />
       </div>
     )
   }
