@@ -1,7 +1,6 @@
 import React from 'react';
 import { List } from './List';
 import { Form } from './From';
-import { getLANGUAGES } from './const/languages';
 import { withLoading } from './hoc/withLoding';
 import styled from 'styled-components';
 import { getLanguages } from './const/languages';

@@ -30,8 +30,8 @@ export class Form extends React.Component {
         super(props);
         this.state = { text: '' }
     }
-    submitForm(event) {
-        event.preventDefault();
+    submitForm(e) {
+        e.preventDefault();
         this.props.onAddLang(this.state.text);
     }
 
@@ -45,7 +45,7 @@ export class Form extends React.Component {
                         <Label>言語</Label>
                         <Input type="text" value={text}
                             onChange={(e) => this.setState({ text: e.target.value })}
-                        />
+                            autoFocus />
                     </div>
                     <ButtonContainer>
                         <FormButton>追加</FormButton>

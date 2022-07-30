@@ -13,6 +13,6 @@ export class TabBodyContainer extends React.Component {
                 <h4>{title}</h4>
                 {children}
             </Container>
-        );
+        )
     }
 }
