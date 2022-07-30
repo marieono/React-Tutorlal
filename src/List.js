@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const Container = styled.div`
-    padding: 12px 64px;
-`
+// const Container = styled.div`
+//     padding: 12px 64px;
+// `
 
 const ListItem = styled.div`
     padding: 8px 16px;
