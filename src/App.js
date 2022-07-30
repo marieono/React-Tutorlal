@@ -1,8 +1,10 @@
 import React from 'react';
 import { List } from './List';
 import { Form } from './From';
-import { LANGUAGES } from './const/languages';
+import { getLANGUAGES } from './const/languages';
+import { withLoading } from './hoc/withLoding';
 import styled from 'styled-components';
+import { getLanguages } from './const/languages';
 
 
 const Header = styled.header`
@@ -29,7 +31,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       tab: 'list',
-      langs: LANGUAGES,
+      langs: props.data,
     };
   }
   addLang(lang) {
@@ -56,4 +58,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withLoading(App, getLanguages);
