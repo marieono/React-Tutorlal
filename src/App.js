@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { List } from "./List";
 import { Form } from "./From";
-import { LANGUAGES } from "./const/languages";
+import { getLANGUAGES } from "./const/languages";
+import { withLoading } from './hoc/withLoding';
 
 const Header = styled.header`
   display: flex;
@@ -24,14 +25,14 @@ const HeaderLi = styled.li`
   border-bottom: ${props => props.focused ? '2px solid #F44336' : 'none'};
 `
 
-function App() {
+function App({ data }) {
   const [tab, setTab] = useState('List');
-  const [langs, setLangs] = useState(LANGUAGES);
+  const [langs, setLangs] = useState(data);
 
   const addLang = (lang) => {
     setLangs([...langs, lang]);
     setTab('list');
-  }
+  };
 
   return (
     <div>
@@ -49,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default withLoading(App, getLANGUAGES);
