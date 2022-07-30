@@ -1,4 +1,4 @@
-export const LANGUAGES = [
+const LANGUAGES = [
     'JavaScript',
     'C++',
     'Ruby',

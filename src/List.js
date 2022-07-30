@@ -22,4 +22,4 @@ export const List = ({ langs }) => {
         </TabBodyContainer>
     )
 
-}
+};
