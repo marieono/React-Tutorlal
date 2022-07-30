@@ -21,6 +21,6 @@ export const Modal = (props) => {
         <Container>
             {props.childlen}
         </Container>,
-        modalRoot,
+        modalRoot
     )
 }
