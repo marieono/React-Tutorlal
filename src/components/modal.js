@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import { useEffect, useContext } from 'react';
 import styled from 'styled-components';
 
 const modalRoot = document.getElementById("modal-root");
@@ -11,13 +12,15 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
-    widht: 100%;
+    width: 100%;
     background-color: rgba(0,0,0, .5);
 `
 
-export const Modal = () => {
+export const Modal = (props) => {
     return ReactDOM.createPortal(
-        <div>モーダル</div>,
+        <Container>
+            {props.childlen}
+        </Container>,
         modalRoot,
     )
 }
