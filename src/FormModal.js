@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { Button } from "./components/button"
-import { Modal } from "./components/modal"
+import styled from "styled-components";
+import { Button } from "./components/button";
+import { Modal } from "./components/modal";
 
 const Container = styled.div`
     width: 240px;
