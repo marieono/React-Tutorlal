@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
@@ -11,13 +12,17 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
-    widht: 100%;
+    width: 100%;
     background-color: rgba(0,0,0, .5);
 `
 
-export const Modal = () => {
-    return ReactDOM.createPortal(
-        <div>モーダル</div>,
-        modalRoot,
-    )
+export class Modal extends React.Component {
+    render() {
+        return ReactDOM.createPortal(
+            <Container>
+                {this.props.children}
+            </Container>,
+            modalRoot
+        )
+    }
 }
