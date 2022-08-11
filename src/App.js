@@ -52,7 +52,6 @@ class App extends React.Component {
         {
           tab === 'list' ? <List langs={langs} /> : <Form onAddLang={(lang) => this.addLang(lang)} />
         }
-        <Modal />
       </div>
     )
   }
