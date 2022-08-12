@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { Button } from './components/button.js'
+import { Button } from './components/button.js';
 import { TabBodyContainer } from "./components/tab-body-container.js";
 import { FormModal } from "./FormModal.js";
 
@@ -41,7 +41,7 @@ export class Form extends React.Component {
         const { onAddLang } = this.props;
 
         return (
-            < TabBodyContainer titile="新しい言語を追加">
+            < TabBodyContainer titile="新しい言語の追加">
                 <form onSubmit={(e) => this.submitForm(e)}>
                     <div>
                         <Label>言語</Label>
