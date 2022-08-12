@@ -44,7 +44,7 @@ export const Form = ({ onAddLang }) => {
                     <Label>言語</Label>
                     <Input type="text" value={text}
                         onChange={(e) => setText(e.target.value)}
-                    />
+                        autoFocus />
                 </div>
                 <ButtonContainer>
                     <FormButton>追加</FormButton>
