@@ -41,7 +41,7 @@ export class Form extends React.Component {
         const { onAddLang } = this.props;
 
         return (
-            < TabBodyContainer titile="新しい言語の追加">
+            < TabBodyContainer title="新しい言語の追加">
                 <form onSubmit={(e) => this.submitForm(e)}>
                     <div>
                         <Label>言語</Label>

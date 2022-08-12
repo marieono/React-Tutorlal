@@ -23,7 +23,7 @@ export class FormModal extends React.Component {
         return (
             < Modal >
                 <Container>
-                    <div>本当に作成しますか</div>
+                    <div>本当に作成しますか？</div>
                     <ButtonWrapper>
                         <Button onClick={cancel}>Cancel</Button>
                         <Button onClick={confirm}>OK</Button>
