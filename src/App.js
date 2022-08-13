@@ -27,7 +27,7 @@ const HeaderLi = styled.li`
 `
 
 function App({ data }) {
-  const [tab, setTab] = useState('List');
+  const [tab, setTab] = useState('list');
   const [langs, setLangs] = useState(data);
 
   const addLang = (lang) => {
