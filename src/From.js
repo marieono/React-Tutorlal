@@ -3,6 +3,7 @@ import { Button } from "./components/button.js";
 import styled from "styled-components";
 import { TabBodyContainer } from "./components/tab-body-container.js";
 import { FormModal } from "./FormModal.js";
+import { Hint } from "./Hint.js";
 
 
 
@@ -45,6 +46,7 @@ export const Form = ({ onAddLang }) => {
                     <Input type="text" value={text}
                         onChange={(e) => setText(e.target.value)}
                         autoFocus />
+                    <Hint />
                 </div>
                 <ButtonContainer>
                     <FormButton>追加</FormButton>
