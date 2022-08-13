@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Button } from './components/button.js';
 import { TabBodyContainer } from "./components/tab-body-container.js";
 import { FormModal } from "./FormModal.js";
+import { Hint } from "./Hint.js";
 
 const Label = styled.label`
     display: flex;
@@ -48,6 +49,7 @@ export class Form extends React.Component {
                         <Input type="text" value={text}
                             onChange={(e) => this.setState({ text: e.target.value })}
                             autoFocus />
+                        <Hint />
                     </div>
                     <ButtonContainer>
                         <FormButton>追加</FormButton>
