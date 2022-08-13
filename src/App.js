@@ -15,7 +15,7 @@ const Header = styled.header`
 
 const HeaderUl = styled.ul`
   display: flex;
-  margin: 0:
+  margin: 0;
   padding: 0;
 `
 
