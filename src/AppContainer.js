@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeContext, THEMES } from './Contexts/ThemeContext';
+import { ThemeContext, THEMES } from './contexts/ThemeContext';
 import { withLoading } from './hoc/withLoding';
 import App from "./App";
 import { getLanguages } from './const/languages';

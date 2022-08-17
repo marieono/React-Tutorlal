@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { ThemeContext } from "./Contexts/ThemeContext";
+import { ThemeContext } from "./contexts/ThemeContext";
 import { Button } from "./components/button";
 
 const Container = styled.header`

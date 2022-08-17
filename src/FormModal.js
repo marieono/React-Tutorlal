@@ -3,7 +3,7 @@ import React from "react";
 import styled from 'styled-components';
 import { Modal } from "./components/modal";
 import { Button } from "./components/button";
-import { ThemeContext, THEMES } from "./Contexts/ThemeContext";
+import { ThemeContext, THEMES } from "./contexts/ThemeContext";
 
 const Container = styled.div`
     width: 240px;

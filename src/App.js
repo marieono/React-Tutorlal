@@ -5,7 +5,7 @@ import { Form } from './From';
 import styled from 'styled-components';
 // import { getLanguages } from './const/languages';
 import { Header } from './Header';
-import { ThemeContext } from './Contexts/ThemeContext';
+import { ThemeContext } from './contexts/ThemeContext';
 
 
 const Container = styled.div`
