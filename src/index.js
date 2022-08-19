@@ -5,11 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import { AppContainer } from './AppContainer';
 
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <AppContainer />
   </React.StrictMode>,
-  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
